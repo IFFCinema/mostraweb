@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Cálculo IR</title>
+    <script type="text/javascript">
+    function isNumberKey(evt){
+      var charCode = (evt.which) ? evt.which : event.keyCode
+      if (charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+      return true;
+    }
+    </script>
+  </head>
+  <body align="middle">
+    <form action="aula_10-php_ex1.php" method=post>
+    <h2>Cálculo IR</h2>
+    <p>Nome: <input type=text name=nome></p><br>
+    Cargo: <input type=text name=cargo></p><br>
+    Salário: <input type=text name=salario onkeypress="return isNumberKey(event)"></p><br>
+    <input type="submit" value="Enviar e calcular">
+  </body>
+  <footer>
+     <br>
+     <p>Cálculo IR 2015</p>
+   </footer>
+</html>
