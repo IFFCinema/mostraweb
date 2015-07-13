@@ -1,20 +1,23 @@
 <?php
-$nome;
-$email;
-$matricula;
-$dataNasc;
-$sessao;
-$conexao = mysql_connect ("192.168.0.101:3306", "root", "fvs38795") or die (mysql_error());
+$host = '127.0.0.1';
+$user = 'root';
+$password = 'mar@cuj4';
+$database = 'cadastro';
 
-mysql_select_db("Reserva", $conexao);
+$link = mysql_connect($host, $user, $password);
+if (!$link) {
+  die('Desculpe, não foi possível conectar-se ao servidor.<br><b>ERRO: </b> ' . mysql_error());
+}
+mysql_select_db ($database, $link);
 
-$nome = $_POST["q1"];
-$email = $_POST["q2"];
-$maricula = $_POST["q3"];
+$matricula = $_POST["q1"];
+$nome = $_POST["q2"];
+$email = $_POST["q3"];
 $dataNasc = $_POST["q4"];
 $sessao = $_POST["q5"];
-$insert = "insert into Reserva values('$matricula','$nome','$email','$dataNasc','$sessao')";
-mysql_close ($conexao);
+$insert = "insert into reserva values('$matricula','$nome','$email','$dataNasc','$sessao')";
+mysql_query ($insert, $link) or die (mysql_error());
+mysql_close ($link);
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR" class="no-js">

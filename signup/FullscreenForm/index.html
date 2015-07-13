@@ -25,20 +25,12 @@
 					<small><p>É rapidinho, vai.</p></small>
 					<br>
 					<div class="codrops-top">
-						<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/NotificationStyles/"><span>voltar</span></a>
+						<a class="codrops-icon codrops-icon-prev" href="javascript:history.back();"><span>voltar</span></a>
 						<a class="codrops-icon codrops-icon-info" href="#"><span>ajuda</span></a>
 					</div>
 				</div>
-				<form action=./DB/respostas.php id="myform" class="fs-form fs-form-full" autocomplete="off">
+				<form action=./DB/respostas.php method=POST id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q1">Qual é o seu nome?</label>
-							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="seu nome aqui" required/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q2" data-info="A gente também detesta spam, por isso a gente não vai ficar te mandando mensagens que você não queira receber.">Qual o seu endereço de e-mail?</label>
-							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="seu@email.com" required/>
-						</li>
 						<li data-input-trigger>
 						<script type="text/javascript">
 						function isNumberKey(evt){
@@ -48,8 +40,16 @@
 							return true;
 						}
 						</script>
-							<label class="fs-field-label fs-anim-upper" for="q3" data-info="Isto irá nos ajudar a saber de qual campus do IFFluminense você faz parte">Qual o seu número de matrícula?</label>
-							<input class="fs-anim-lower" id="q3" name="q3" type="text" onkeypress="return isNumberKey(event)" required/>
+							<label class="fs-field-label fs-anim-upper" for="q1" data-info="Isto irá nos ajudar a saber de qual campus do IFFluminense você faz parte">Qual o seu número de matrícula?</label>
+							<input class="fs-anim-lower" id="q1" name="q1" type="text" onkeypress="return isNumberKey(event)" required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2">Qual é o seu nome?</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="seu nome aqui" required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="A gente também detesta spam, por isso a gente não vai ficar te mandando mensagens que você não queira receber.">Qual o seu endereço de e-mail?</label>
+							<input class="fs-anim-lower" id="q3" name="q3" type="email" placeholder="seu@email.com" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q4" data-info="Isto irá nos ajudar a saber se você se adequa a classificação indicativa do filme">Qual a sua data de nascimento?</label>
@@ -57,12 +57,13 @@
 						</li>
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" data-info="Qual filme você quer assistir?">Escolha a sessão: </label>
-							<select name=sessao for="q5" required/>
+							<select name=q5 for="q5" required/>
 									<option class="fs-anim-lower" value="" disabled selected>Escolha um filme</option>
-									<option class="fs-anim-lower" value=cparadiso id="q5" name="q5">Cinema Paradiso (Itália, 1988)</option>
-									<option class="fs-anim-lower" value=ameliepoulain id="q5" name="q5">O Fabuloso Destino d'Amélie Poulain (França, 2001)</option>
-									<option class="fs-anim-lower" value=2coelhos id="q5" name="q5">2 Coelhos (Brasil, 2012)</option>
-									<option class="fs-anim-lower" value=songone id="q5" name="q5">Song One (EUA, 2014)</option>
+									<option class="fs-anim-lower" value="Cinema Paradiso (Itália, 1988)" id="q5" name="q5">Cinema Paradiso (Itália, 1988)</option>
+									<option class="fs-anim-lower" value="O Fabuloso Destino de Amélie Poulain (França, 2001)" id="q5" name="q5">O Fabuloso Destino d'Amélie Poulain (França, 2001)</option>
+									<option class="fs-anim-lower" value="Medianeras (Argentina, 2011)" id="q5" name="q5">Medianeras (Argentina, 2011)</option>
+									<option class="fs-anim-lower" value="2 Coelhos (Brasil, 2012)" id="q5" name="q5">2 Coelhos (Brasil, 2012)</option>
+									<option class="fs-anim-lower" value="Song One (EUA, 2014)" id="q5" name="q5">Song One (EUA, 2014)</option>
 	        		</select>
 						</li>
 					</ol><!-- /fs-fields -->
@@ -71,13 +72,12 @@
 			</div><!-- /fs-form-wrap -->
 
 			<!-- copyright -->
-          <footer>
-						<p align="middle">
-              <font size="2px">feito com &#10084; no <i>campus</i> Campos-Centro<br>&copy; 4º Módulo do Técnico Concomitante em Informática de 2015. Tudo o que está aqui é nosso, exceto o que não for.</font>
-              </span>
-					</p>
-					<br>
-				</footer>
+			<footer>
+				<p align="middle">
+					<font size="2px">feito com &#10084; no <i>campus</i> Campos-Centro<br>Projeto experimental interdisciplinar do 4º Módulo do Técnico Concomitante em Informática do Instituto Federal Fluminense, <i>campus</i> Campos-Centro</font><br><br>
+					</span>
+			</p>
+		</footer>
 
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>

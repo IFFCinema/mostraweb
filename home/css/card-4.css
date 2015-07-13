@@ -3,10 +3,10 @@
 .card {
 	position: relative;
 	float: left;
-	width: 21%;
-	height: 0;
+	width: 16%;
+	height: 25;
 	margin: 2%;
-	padding-bottom: 20%;
+	padding-bottom: 13%;
 }
 
 .card__container {
