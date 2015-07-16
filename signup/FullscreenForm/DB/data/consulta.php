@@ -24,16 +24,45 @@ echo "</header>";
 $consulta = "select * from reserva";
 $resultado = mysql_query ($consulta, $link);
 $quant = mysql_num_rows($resultado);
-echo "<p><font color='#fff'>Número de registros até o momento: ".$quant;
+echo "<font color='#fff'>";
 for($i=0;$i<$quant;$i++){
     $matricula = mysql_result($resultado,$i,"matricula");
     $nome = mysql_result($resultado,$i,"nome");
     $email = mysql_result($resultado,$i,"email");
     $dataNasc = mysql_result($resultado,$i,"dataNasc");
     $sessao = mysql_result($resultado,$i,"sessao");
-    echo "<br><br>Matricula: ".$matricula."<br>Nome: ".$nome."<br>E-mail: ".$email."<br>Data de nascimento: ".$dataNasc."<br>Sessão: ".$sessao;
+
+    echo "<center>
+          <table border='1' width='30%' align='middle'>
+          <font color='#fff'>
+            <th colspan='2' align='middle'>DADOS DA RESERVA</th>
+            <tr>
+              <td align='middle'>Matrícula:</td>
+              <td align='middle'>".$matricula."</td>
+            </tr>
+            <tr>
+              <td align='middle'>Nome:</td>
+              <td align='middle'>".$nome."</td>
+            </tr>
+            <tr>
+              <td align='middle'>E-mail:</td>
+              <td align='middle'>".$email."</td>
+            </tr>
+            <tr>
+              <td align='middle'>Data de nascimento:</td>
+              <td align='middle'>".$dataNasc."</td>
+            </tr>
+            <tr>
+              <td align='middle'>Sessão:</td>
+              <td align='middle'>".$sessao."</td>
+            </tr>
+          </font>
+          </table>
+          </center>
+    ";
 }
-echo"
+echo "<p align='middle'><font color='#fff'>Número de registros até o momento: ".$quant."</font></p>";
+echo "
 <!-- copyright -->
 <footer>
   <p align='middle'>
@@ -42,7 +71,8 @@ echo"
     </span>
 </p>
 </footer>";
-echo "</font></p>";
+echo "</font></p>
+      </font>";
 echo "</body>";
 echo "</html>";
 mysql_close ($link);
