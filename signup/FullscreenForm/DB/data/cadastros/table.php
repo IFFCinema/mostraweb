@@ -1,4 +1,7 @@
 <?php
+include("../security.php");
+protegePagina();
+
 $host = '127.0.0.1';
 $user = 'root';
 $password = 'mar@cuj4';
@@ -14,12 +17,15 @@ echo "<!DOCTYPE HTML>";
 echo "<html lang='pt-BR'>";
 echo "<head>";
 echo "<meta charset='utf-8'>";
-echo "<META HTTP-EQUIV='Refresh' CONTENT='5;URL=consulta.php' >";
+echo "<META HTTP-EQUIV='Refresh' CONTENT='5;URL=table.php' >";
 echo "<title>ACESSO RESTRITO | Exibindo os dados da tabela - Cinema no IFF</title>";
 echo "</head'>";
 echo "<body bgcolor='#000'>";
 echo "<header align='middle'>";
-echo "<div><a target='_blank' href='http://www.iff.edu.br/' title='IFFluminense'><span><img src='logo_iff.png'></span></a></div><p><br><font color='#fff' size='3.2px'><b>Mostra de Cinema Alternativo do Instituto Federal Fluminense</b><br><span><i>campus</i> Campos-Centro</span></font></p><br>";
+echo "<font color='#fff'>";
+echo "<p align='left'>Olá, " . $_SESSION['usuarioNome'];
+echo "</p></font>";
+echo "<div><!-- begin only for Mozilla Firefox --><center><!-- end only for Mozilla Firefox --><a target='_blank' href='http://www.iff.edu.br/' title='IFFluminense'><span><img src='logo_iff.png'></span></a></div><p align='middle'><br><font color='#fff' size='3.2px'><b>Mostra de Cinema Alternativo do Instituto Federal Fluminense</b><br><span><i>campus</i> Campos-Centro</span></font></p><br><!-- begin only for Mozilla Firefox --></center><!-- end only for Mozilla Firefox --></div>";
 echo "</header>";
 $consulta = "select * from reserva";
 $resultado = mysql_query ($consulta, $link);
