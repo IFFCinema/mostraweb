@@ -9,7 +9,7 @@ Nosso webapp está disponibilizado sob dois tipos de licença a GNU GPL v3.0 (20
 
                   GOOD BOY LICENSE
 
-- Por favor, faça o que quer que sua mâe deixaria você fazer:
+- Por favor, faça o que quer que sua mãe deixaria você fazer:
 
 - O que é permitido:
 
