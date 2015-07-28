@@ -14,14 +14,14 @@ Nosso webapp está disponibilizado sob dois tipos de licença a GNU GPL v3.0 (20
 - O que é permitido:
 
   - Download;
-  - mude;
+  - mudar;
   - fork no GitHub;
   - redistribua para os amiguinhos.
 
 - O que não é permitido:
 
   - Fazer tatoos;
-  - tocar com as mão sujas;
+  - tocar com as mãos sujas;
   - trocar por drogas.
 
 > A Licença GNU GPL 3:
