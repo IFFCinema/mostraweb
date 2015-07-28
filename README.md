@@ -3,7 +3,7 @@
 
 - Este é nosso modelo de webapp para a mostra de cinema "Mostra de Cinema Alternativo do IFFluminense". Aqui, os usuários poderão escolher qual filme eles pretendem assistir e muito mais...
 
-Nosso webapp está disponibilizado sob dois tipos de licença a GNU GPL v3.0 (2007) e a Icons8 License (The Good Boy License), veja co conteúdo de ambas as licenças abaixo:
+Nosso webapp está disponibilizado sob dois tipos de licença a GNU GPL v3.0 (2007) e a Icons8 License (The Good Boy License), veja o conteúdo de ambas as licenças abaixo:
 
 > A Licença do Bom Menino:
 
@@ -25,6 +25,16 @@ Nosso webapp está disponibilizado sob dois tipos de licença a GNU GPL v3.0 (20
   - trocar por drogas.
 
 > A Licença GNU GPL 3:
+
+- Resumo traduzido:
+
+O "WebApp Mostra de Cinema Alternativo do IFFluminense" (WEBAPP) é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GNU GPL) como publicada pela Free Software Foundation; tanto a versão 2 da Licença ou (a sua escolha) qualquer versão posterior, neste caso, a versão 3, que segue abaixo.
+
+Este WEBAPP é distribuído na esperança de que será útil, mas SEM NENHUMA GARANTIA; até mesmo sem a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU GPL) para mais detalhes.
+
+Você deve ter recebido uma cópia da GNU General Public License (GPL) junto com o WEBAPP; se não, escreva para a Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+- Licença completa (conteúdo original):
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
