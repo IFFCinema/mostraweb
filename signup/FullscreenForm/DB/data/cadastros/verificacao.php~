@@ -1,0 +1,9 @@
+<?php
+if (empty($_SESSION['id'])) {
+	echo "<!DOCTYPE HTML><html lang='pt-BR'><head><meta charset='utf-8'></meta>Você não está logado e/ou não possui permissões para acessar esta página. Redirecionando para a página inicial.</html>";
+	session_destroy();
+	session_unset();
+	header('Location: ../validacao.html');
+	exit();
+}
+?>

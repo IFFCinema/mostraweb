@@ -1,7 +1,7 @@
 <?php
 $host = '127.0.0.1';
 $user = 'root';
-$password = 'mar@cuj4';
+$password = 'fvs38795';
 $database = 'security';
 
 $link = mysql_connect($host, $user, $password);

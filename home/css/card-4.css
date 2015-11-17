@@ -1,5 +1,7 @@
 /* CARD */
 
+/* OLD
+
 .card {
 	position: relative;
 	float: left;
@@ -7,6 +9,17 @@
 	height: 25;
 	margin: 2%;
 	padding-bottom: 13%;
+}
+
+*/
+
+.card {
+	position: relative;
+	float: left;
+	width: 29%;
+	height: 0;
+	margin: 2%;
+	padding-bottom: 20%;
 }
 
 .card__container {

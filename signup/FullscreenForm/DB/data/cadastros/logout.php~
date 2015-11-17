@@ -1,0 +1,7 @@
+<?php
+include("./verificacao.html");
+
+session_destroy();
+session_unset();
+	header('location: ../validacao.html');
+?>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ACESSO RESTRITO | Login da tabela de cadastro | Mostra de Cinema ALternativo do Instituto Federal Fluminense</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="IFFluminense" />
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body align="middle">
+		<div class="container">
+			<!-- Top Navigation -->
+			<header class="codrops-header">
+				<div><iframe align="left" position="absolute" name="web_analitycs" width="0.1" height="0.1" src="./php_websiteANALYTICS/show/ip.php"></iframe></div>
+				<h1>Login do sistema de banco de dados<span>acesso restrito<br><font size="2px">se você não é um de nós, não sei como chegou aqui, mas <a href="http://www.pudim.com.br">caia fora!</a></font></span></h1>
+			</header>
+			<section>
+				<h2>Entre com seu nome de usuário e senha</h2>
+				<div class="box">
+					<form align="middle" method="post" action="login.php" autocomplete="off">
+					  <label>USUÁRIO</label><br>
+					  <input type="text" name="usuario" maxlength="50" />
+						<br>
+					  <label>SENHA</label><br>
+					  <input type="password" name="senha" maxlength="50" /><br><br>
+						<input type="submit" value="Entrar" />
+					</form>
+
+				</div>
+			</section>
+		</div><!-- /container -->
+	</body>
+</html>

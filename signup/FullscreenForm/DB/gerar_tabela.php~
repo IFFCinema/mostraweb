@@ -1,0 +1,48 @@
+<?php
+$host = '127.0.0.1';
+$user = 'root';
+$password = 'fvs38795';
+$database = 'cadastro';
+
+$link = mysql_connect($host, $user, $password);
+
+if (!$link) {
+  die('Desculpe, não foi possível conectar-se ao servidor.<br><b>ERRO: </b> ' . mysql_error());
+}
+mysql_select_db ($database, $link);
+
+ $arquivo = ''reservas.ods'';
+
+ $tabela = '<table border="1">';
+ $tabela .= '<tr>';
+ $tabela .= '<td colspan="2">Reserva por Nº de Matrícula</tr>';
+ $tabela .= '</tr>';
+ $tabela .= '<tr>';
+ $tabela .= '<td><b>Matrícula</b></td>';
+ $tabela .= '<td><b>Nome</b></td>';
+ $tabela .= '<td><b>E-mail</b></td>';
+ $tabela .= '<td><b>Data de nascimento</b></td>';
+ $tabela .= '<td><b>Sessão</b></td>';
+ $tabela .= '</tr>';
+
+ $resultado = mysql_query('SELECT * FROM reserva');
+
+ while($dados = mysql_fetch_array($resultado))
+ {
+  $tabela .= '<tr>';
+  $tabela .= '<td>'.$dados['matricula'].'</td>';
+  $tabela .= '<td>'.$dados['nome'].'</td>';
+  $tabela .= '<td>'.$dados['email'].'</td>';
+  $tabela .= '<td>'.$dados['dataNasc'].'</td>';
+  $tabela .= '<td>'.$dados['sessao'].'</td>';
+  $tabela .= '</tr>';
+ }
+
+ $tabela .= '</table>';
+
+ header ('Cache-Control: no-cache, must-revalidate');
+ header ('Pragma: no-cache');
+ header('Content-Type: application/x-msexcel');
+ header ("Content-Disposition: attachment; filename=\"{$arquivo}\"");
+ echo $tabela;
+?>

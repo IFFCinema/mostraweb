@@ -3,14 +3,14 @@
 #
 #  Disponibilizado sob a licença GNU GPL (GNU Public License - http://www.gnu.org/licenses/gpl.html)
 
-DROP DATABASE cadastro;
+DROP TABLE IF EXISTS cadastro;
 CREATE DATABASE cadastro;
 use cadastro;
 CREATE TABLE reserva(
-		matricula 				varchar(30),
-		nome 					varchar(30),
-		email 					varchar(30),
-		dataNasc 				varchar(30),
-        sessao					varchar(100),
+		matricula 				INT(20) NOT NULL,
+		nome 					varchar(30) NOT NULL,
+		email 					varchar(30) NOT NULL,
+		dataNasc 				varchar(30) NOT NULL,
+        sessao					varchar(100) NOT NULL,
 		primary key(matricula)
-)ENGINE=MyISAM DEFAULT CHARSET=utf8;
+)DEFAULT CHARSET=utf8;

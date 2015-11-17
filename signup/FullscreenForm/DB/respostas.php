@@ -1,10 +1,11 @@
 <?php
 $host = '127.0.0.1';
 $user = 'root';
-$password = 'mar@cuj4';
+$password = 'fvs38795';
 $database = 'cadastro';
 
 $link = mysql_connect($host, $user, $password);
+
 if (!$link) {
   die('Desculpe, não foi possível conectar-se ao servidor.<br><b>ERRO: </b> ' . mysql_error());
 }
@@ -37,9 +38,9 @@ mysql_close ($link);
 		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body>
+	<body bgcolor="#0C1F06">
 		<div class="container">
-      <center><p><b>Inscrição concluída, você será redirecionado</b></p></center>
+      <center><p><b><font color="#5B7054">Inscrição concluída, você será redirecionado</b></p></center>
       <script type="text/javascript">
       setTimeout(function () {
          window.location.href = "../";
@@ -49,7 +50,7 @@ mysql_close ($link);
     <!-- copyright -->
         <footer>
           <p align="middle">
-            <font size="2px">DENTRO DE INSTANTES VOCÊ REBERÁ A CONFIRMAÇÃO DE RESERVA POR E-MAIL :)<br><br>feito com &#10084; no <i>campus</i> Campos-Centro<br></font>
+            <font size="2px">DENTRO DE INSTANTES VOCÊ REBERÁ A CONFIRMAÇÃO DE RESERVA POR E-MAIL :)<br><br>feito com &#10084; no <i>campus</i> Campos-Centro</font><br></font>
             </span>
         </p>
         <br>
@@ -74,7 +75,7 @@ mysql_close ($link);
 
       new FForm( formWrap, {
         onReview : function() {
-          classie.add( document.body, 'overview' ); // for demo purposes only
+          classie.add( document.body, 'overview' );
         }
       } );
     })();

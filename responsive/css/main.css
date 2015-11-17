@@ -7,12 +7,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #6bb1a1;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #6bb1a1;
     text-shadow: none;
 }
 
@@ -66,22 +66,22 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: IFF Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #81dd5a;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #81dd5a;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #53b746;
 }
 
 .title {
@@ -101,14 +101,14 @@ nav ul {
 nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 15px 0;
+    padding: 5px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #81dd5a;
 }
 
 nav a:hover,
