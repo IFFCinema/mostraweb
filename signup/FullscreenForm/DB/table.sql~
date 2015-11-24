@@ -3,10 +3,9 @@
 #
 #  Disponibilizado sob a licença GNU GPL (GNU Public License - http://www.gnu.org/licenses/gpl.html)
 
-DROP DATABASE IF EXISTS cadastro;
+DROP TABLE IF EXISTS cadastro;
 CREATE DATABASE cadastro;
 use cadastro;
-DROP TABLE IF EXISTS reserva;
 CREATE TABLE reserva(
 		matricula 				INT(20) NOT NULL,
 		nome 					varchar(30) NOT NULL,
