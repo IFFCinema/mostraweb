@@ -5,7 +5,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
 
 ErrorDocument 404 404.html
 
-RewriteRule .*\.(jpg|jpeg|png|gif)$ /alerta/alert.jpg [L]
+RewriteRule .*\.(jpg|jpeg|png|gif)$ /no-picture/alert.jpg [L]
 
 <files ~ "^.*\.([Hh][Tt][Aa])">
 order allow,deny
