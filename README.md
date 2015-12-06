@@ -1,4 +1,4 @@
-# webapp
+# mostraweb
 
 Este é o nosso template webapp para a exibição de cinema alternativo do Instituto Federal Federal de Educação, Ciência e Tecnologia Fluminense. Aqui os usuários podem escolher qual filme eles desejam assistir.
 
