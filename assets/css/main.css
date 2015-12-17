@@ -3388,24 +3388,28 @@
 				margin: 0 0 2em 3em;
 			}
 
+            .wrapper.spotlight.style1 {
+				background-color: rgba(68, 131, 99, 0.54);
+			}
+
 			.wrapper.spotlight.style2 {
-				background-color: #448363;
+				background-color: rgba(68, 131, 99, 0.54);
 			}
 
 			.wrapper.spotlight.style3 {
-				background-color: #448363;
+				background-color: rgba(68, 131, 99, 0.54);
 			}
 
 			.wrapper.spotlight.style4 {
-				background-color: #448363;
+				background-color: rgba(68, 131, 99, 0.54);
 			}
 
 			.wrapper.spotlight.style5 {
-				background-color: #448363;
+				background-color: rgba(68, 131, 99, 0.54);
 			}
 
 			.wrapper.spotlight.style6 {
-				background-color: #448363;
+				background-color: rgba(68, 131, 99, 0.54);
 			}
 
 		@media screen and (max-width: 980px) {
