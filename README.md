@@ -4,28 +4,7 @@ Este é o nosso template do projeto "Mostra de Cinema Alternativo" do Instituto 
 
 Nosso projeto não consiste apenas no desenvolvimento do template "mostraweb", mas também no desenvolvimento do sistema desenvolvido em Shell Script do Linux (SH), para a realização do resgate da qualidade e conversão de áudio e vídeo para alta definição. Para o desenvolvimento deste sistema utilizamos o FFmpeg, o software de código aberto multi-plataforma para codificação, decodificação e transcodificação multimídia. Todo o nosso projeto, desde o desenvolvimento do template HTML5 foi desenvolvido utilizado de tecnologias de código aberto.
 
-Nosso template HTML5+CSS3+JavaScript e suas funcionalidades está disponibilizado sob as licenças: a GNU AFFERO GENERAL PUBLIC LICENSE (GNU AGPLv3) e a Icons8 License (The Good Boy License), veja o conteúdo das licenças abaixo:
-
-> A Licença do Bom Menino:
-
-                  GOOD BOY LICENSE
-
-- Por favor, faça o que quer que sua mãe deixaria você fazer:
-
-- O que é permitido:
-
-  - Download;
-  - mudar;
-  - fork no GitHub;
-  - redistribua para os amiguinhos.
-
-- O que não é permitido:
-
-  - Fazer tatoos;
-  - tocar com as mãos sujas;
-  - trocar por drogas.
-  
-  TEXTO PARA PARA REFERÊNCIA DO CONTEÚDO DA LICENÇA: https://icons8.com/good-boy-license/
+Nosso template HTML5+CSS3+JavaScript e suas funcionalidades está disponibilizado sob a licença GNU AFFERO GENERAL PUBLIC LICENSE (GNU AGPLv3), veja o conteúdo abaixo:
 
 > a Licença GNU Affero GPL 3:
 
