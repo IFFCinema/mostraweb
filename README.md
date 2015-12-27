@@ -24,6 +24,8 @@ Nosso template HTML5+CSS3+JavaScript e suas funcionalidades está disponibilizad
   - Fazer tatoos;
   - tocar com as mãos sujas;
   - trocar por drogas.
+  
+  TEXTO PARA PARA REFERÊNCIA DO CONTEÚDO DA LICENÇA: https://icons8.com/good-boy-license/
 
 > a Licença GNU Affero GPL 3:
 
