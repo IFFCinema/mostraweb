@@ -1,7 +1,0 @@
-AuthUserFile /home/maracuja/.htpasswd 
-AuthGroupFile /dev/null 
-AuthName Restrito 
-AuthType Basic 
-<Limit GET POST> 
-require user maracuja
-</Limit>
