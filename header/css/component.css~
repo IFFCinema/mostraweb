@@ -1,0 +1,43 @@
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #f6f6f6;
+	z-index: 10000;
+	height: 50px;
+}
+
+.cbp-af-header .cbp-af-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 10 1.875em;
+}
+
+.cbp-af-header h1,
+.cbp-af-header nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.cbp-af-header h1,
+.cbp-af-header nav a {
+	line-height: 50px;
+}
+
+.cbp-af-header nav {
+	float: center;
+}
+
+.cbp-af-header nav a {
+	color: #009688;
+	font-weight: 800;
+	margin: 0 0 0 5px;
+	font-size: 1em;
+}
+
+.cbp-af-header nav a:hover {
+	color: #333;
+}

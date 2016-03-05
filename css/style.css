@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html {
+    background-color: #009688;
+    background-image: -webkit-linear-gradient(270deg,rgb(0, 150, 136) 0%,rgb(0, 150, 136) 100%);
+    background-image: linear-gradient(270deg,rgb(0, 150, 136) 0%,rgb(0, 150, 136) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 800px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #0083e8;
+}
+
+/* link não visitado */
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* link visitado */
+a:visited {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* link ao passar o mouse */
+a:hover {
+    color: #009688;
+    text-decoration: underline;
+}
+
+/* link selecionado */
+a:active {
+    color: #009688;
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+}
+.borda{
+    border: 5px solid rgb(0, 150, 136);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 100%;
+}
