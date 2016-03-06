@@ -31,10 +31,12 @@
 }
 
 .cbp-af-header nav a {
-	color: #009688;
+	color: #fff;
 	font-weight: 800;
 	margin: 0 0 0 5px;
 	font-size: 1em;
+    float: center;
+    text-align: center;
 }
 
 .cbp-af-header nav a:hover {
