@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #f6f6f6;
+	background: rgba(8, 119, 109, 0.57);
 	z-index: 10000;
 	height: 50px;
 }
@@ -21,7 +21,6 @@
 	position: relative;
 }
 
- /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
 .cbp-af-header nav a {
 	line-height: 50px;
@@ -32,10 +31,12 @@
 }
 
 .cbp-af-header nav a {
-	color: #009688;
+	color: #fff;
 	font-weight: 800;
 	margin: 0 0 0 5px;
 	font-size: 1em;
+    float: center;
+    text-align: center;
 }
 
 .cbp-af-header nav a:hover {
