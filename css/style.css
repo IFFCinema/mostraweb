@@ -16,7 +16,6 @@ body {
     color: #545454;
     background-color: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    float: center;
 }
 
 p {
@@ -31,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     margin-top: 1.3em;
+}
+
+nav {
+    float: center;
 }
 
 a {

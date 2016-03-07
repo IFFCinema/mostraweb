@@ -6,8 +6,6 @@
 	background: rgba(8, 119, 109, 0.57);
 	z-index: 10000;
 	height: 50px;
-    float: center;
-    text-align: center;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -21,6 +19,8 @@
 .cbp-af-header nav {
 	display: inline-block;
 	position: relative;
+    float: center;
+    text-align: center;
 }
 
 .cbp-af-header h1,
@@ -30,6 +30,7 @@
 
 .cbp-af-header nav {
 	float: center;
+    text-align: center;
 }
 
 .cbp-af-header nav a {
